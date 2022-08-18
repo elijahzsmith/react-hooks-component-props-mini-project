@@ -6,7 +6,7 @@ function About({ image = altImage, about }) {
   return (
     <>
         <aside>
-            <img href={image} alt="blog logo"></img>
+            <img src={image} alt="blog logo"></img>
             <p>{about}</p>
         </aside>
     </>
@@ -14,3 +14,4 @@ function About({ image = altImage, about }) {
 }
 
 export default About
+

@@ -1,21 +1,21 @@
-import React from 'react'
-import blogData from '../data/blog'
-import Article from './Article'
+import React from "react";
+import Article from "./Article";
 
-const topLvlArticle = blogData.posts.map(post => {
-    return (
-        <Article key={post.id} title={post.title} date={post.date} preview={post.preview}/>
-    )
-} )
+function ArticleList({ posts }) {
+  const topLvlArticle = posts.map((post) => (
+    <Article
+      key={post.id}
+      title={post.title}
+      date={post.date}
+      preview={post.preview}
+    />
+  ));
 
-function ArticleList() {
   return (
     <>
-        <main>
-            {topLvlArticle}
-        </main>
+      <main>{topLvlArticle}</main>
     </>
-  )
+  );
 }
 
-export default ArticleList
+export default ArticleList;
