@@ -11,11 +11,7 @@ function ArticleList({ posts }) {
     />
   ));
 
-  return (
-    <>
-      <main>{topLvlArticle}</main>
-    </>
-  );
+  return <main>{topLvlArticle}</main>
 }
 
 export default ArticleList;
